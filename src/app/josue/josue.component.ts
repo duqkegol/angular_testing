@@ -5,14 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './josue.component.html',
   styleUrls: ['./josue.component.css']
 })
-export class JosueComponent implements OnInit {
-  mipr: string = '';
-  constructor() { }
-
-  ngOnInit(): void {
-    setTimeout(() => {
-      this.mipr = 'Otro Algo';
-    }, 5000)
-  }
+export class JosueComponent {
+  mipr: string = 'josue';
 
 }
