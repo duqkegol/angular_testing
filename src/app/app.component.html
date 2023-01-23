@@ -3,3 +3,11 @@
   <li *ngFor="let dato of miArreglo ">{{dato}}</li>
 </ul> -->
 <router-outlet></router-outlet>
+<ul>
+  <li *ngFor="let img of images; let i = index">
+    <span attr.data-imgUrl="{{img}}" (click)="lol($event)">{{'imagen - '}}{{i + 1}}</span>
+  </li>
+</ul>
+<img [src]="imagen_carga" id="img-cont" class="img-fluid" width="200px" height="200px" alt="" *ngIf="imagen_carga != '' ">
+<!-- <p>Mi nombre es: {{name}}</p>
+<input type="text" [(ngModel)]="name"> -->
