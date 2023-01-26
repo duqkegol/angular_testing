@@ -6,6 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./josue.component.css']
 })
 export class JosueComponent {
-  mipr: string = 'josue';
+  menores: string[] = [];
+  nombre_menor: string = '';
+  apellido_menor: string = '';
 
+  listar_menor(){
+    // console.log(this.nombre_menor)
+    // console.log(this.apellido_menor)
+    let nombre_completo = this.nombre_menor + ' ' + this.apellido_menor;
+    this.menores.push(nombre_completo);
+  }
 }

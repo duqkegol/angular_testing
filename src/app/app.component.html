@@ -8,6 +8,15 @@
     <span attr.data-imgUrl="{{img}}" (click)="lol($event)">{{'imagen - '}}{{i + 1}}</span>
   </li>
 </ul>
-<img [src]="imagen_carga" id="img-cont" class="img-fluid" width="200px" height="200px" alt="" *ngIf="imagen_carga != '' ">
-<!-- <p>Mi nombre es: {{name}}</p>
-<input type="text" [(ngModel)]="name"> -->
+<img [src]="imagen_carga" id="img-cont" class="img-fluid" width="200px" height="200px" alt=""
+  *ngIf="imagen_carga != '' ">
+
+<div *ngIf="flag; else falsito">
+  <input (keyup)="0" #number type="text"> {{number.value}}
+</div>  
+<ng-template #falsito>
+<input type="text">---
+</ng-template>
+<br>
+<hr>
+<app-josue></app-josue>

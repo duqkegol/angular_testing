@@ -19,6 +19,7 @@ export class AppComponent {
   }
   images = ['assets/17010.jpg', 'assets/dk.jpg', 'assets/Oliver_Atom_Adolescente.png'];
   imagen_carga = '';
+  flag = true;
   lol(event: any) {
     let img_cont = document.getElementById('img-cont');
     let imgUrl = event.target.dataset.imgurl;
@@ -27,7 +28,6 @@ export class AppComponent {
   }
   
   lol2(event: any) {
-    
     console.log(event.target.src);
   }
   
